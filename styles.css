@@ -1,0 +1,95 @@
+body {
+  background-color: orange;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 10;
+  width: 100%;
+}
+
+#t,
+#t2,
+#t3 {
+  padding-top: 60px;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.imgbox {
+  width: 30vw;
+  padding: 0px;
+  margin: 0px;
+}
+.center-fit {
+  width: 30vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+td {
+  border: 2px solid black;
+}
+
+td.pricebox {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+p.price {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10vw;
+}
+
+a#top_link {
+  background-color: dimgray;
+  border-radius: 10px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.imgtd {
+  padding: 5px;
+}

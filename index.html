@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </body>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>

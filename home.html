@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Edwards Jewelry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul class="sticky">
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+    <p id="t3">Hi! Welcome to Edwards Jewelry's website. We will try our best to create what <i>you</i> need. We hope you like our products!</p>
+    <p> 
+      <canvas id="mycanvas"></canvas> 
+    </p>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+    <script>
+      var sketchProc = function(processingInstance) {
+      with (processingInstance) {
+          size(400, 400); 
+          frameRate(30);
+          
+          // ProgramCodeGoesHere
+          // position of the ball
+          var x = 127;
+          // how far the ball moves every time
+          var speed = 3;
+
+          draw = function() {
+              background(255, 165, 0);
+              
+              textSize(30);
+              text("Necklaces", 130, 50);
+              textSize(20);
+              text("Made by the Edwards", 95, 75);
+              
+              fill(255, 180, 0);
+              
+              rect(72+x, 285, 10, 40);
+              
+              fill(229, 255, 255);
+              
+              ellipse(77+x, 325, 40, 30);
+              
+              fill(181, 255, 255);
+              
+              ellipse(77+x, 325, 30, 20);
+              
+              fill(97, 255, 255);
+              
+              ellipse(77+x, 325, 20, 11);
+
+              fill(255, 0, 0);
+              
+              ellipse(x + 0, 170, 15, 15);
+              ellipse(x + 7, 180, 15, 15);
+              ellipse(x + 14, 190, 15, 15);
+              ellipse(x + 21, 200, 15, 15);
+              ellipse(x + 28, 210, 15, 15);
+              ellipse(x + 35, 220, 15, 15);
+              ellipse(x + 42, 230, 15, 15);
+              ellipse(x + 49, 240, 15, 15);
+              ellipse(x + 56, 250, 15, 15);
+              ellipse(x + 63, 260, 15, 15);
+              ellipse(x + 70, 270, 15, 15);
+              ellipse(x + 77, 280, 15, 15);
+              ellipse(x + 153, 170, 15, 15);
+              ellipse(x + 147, 180, 15, 15);
+              ellipse(x + 140, 190, 15, 15);
+              ellipse(x + 133, 200, 15, 15);
+              ellipse(x + 126, 210, 15, 15);
+              ellipse(x + 119, 220, 15, 15);
+              ellipse(x + 112, 230, 15, 15);
+              ellipse(x + 105, 240, 15, 15);
+              ellipse(x + 98, 250, 15, 15);
+              ellipse(x + 91, 260, 15, 15);
+              ellipse(x + 84, 270, 15, 15);
+              ellipse(x + 147, 161, 15, 15);
+              ellipse(x + 140, 156, 15, 15);
+              ellipse(x + 133, 151, 15, 15);
+              ellipse(x + 126, 146, 15, 15);
+              ellipse(x + 119, 141, 15, 15);
+              ellipse(x + 112, 136, 15, 15);
+              ellipse(x + 105, 131, 15, 15);
+              ellipse(x + 98, 126, 15, 15);
+              ellipse(x + 90, 121, 15, 15);
+              ellipse(x + 84, 116, 15, 15);
+              ellipse(x + 7, 161, 15, 15);
+              ellipse(x + 14, 156, 15, 15);
+              ellipse(x + 21, 151, 15, 15);
+              ellipse(x + 28, 146, 15, 15);
+              ellipse(x + 35, 141, 15, 15);
+              ellipse(x + 42, 136, 15, 15);
+              ellipse(x + 49, 131, 15, 15);
+              ellipse(x + 56, 126, 15, 15);
+              ellipse(x + 63, 121, 15, 15);
+              ellipse(x + 70, 116, 15, 15);
+              ellipse(x + 77, 111, 15, 15);
+              if (x>230) {
+                  speed = -3;
+              } 
+              
+              if (x<25) {
+                  speed = 3;
+              }
+              x=x+speed;
+          };
+
+      }};
+
+      // Get the canvas that Processing-js will use
+      var canvas = document.getElementById("mycanvas"); 
+      // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+      var processingInstance = new Processing(canvas, sketchProc); 
+  </script>
+  </body>
+</html>
