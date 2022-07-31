@@ -61,6 +61,11 @@ p {
 table {
   border-collapse: collapse;
   border-spacing: 0px;
+  empty-cells: show;
+}
+
+table#prices {
+  font-size: 20vw;
 }
 
 td {
